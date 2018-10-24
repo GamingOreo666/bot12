@@ -1,0 +1,109 @@
+{
+  "name": "Message_Deleted",
+  "temp": "message",
+  "event-type": "18",
+  "_id": "kMreT",
+  "actions": [
+    {
+      "message": "1",
+      "varName": "message",
+      "info": "3",
+      "storage": "1",
+      "varName2": "message_author",
+      "name": "Store Message Info"
+    },
+    {
+      "message": "1",
+      "varName": "message",
+      "info": "4",
+      "storage": "1",
+      "varName2": "message_channel",
+      "name": "Store Message Info"
+    },
+    {
+      "message": "1",
+      "varName": "message",
+      "info": "2",
+      "storage": "1",
+      "varName2": "message_text",
+      "name": "Store Message Info"
+    },
+    {
+      "member": "2",
+      "varName": "message_author",
+      "info": "0",
+      "storage": "1",
+      "varName2": "member_ob",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "message_author",
+      "info": "1",
+      "storage": "1",
+      "varName2": "member_id",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "message_author",
+      "info": "16",
+      "storage": "1",
+      "varName2": "member_avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "message_author",
+      "info": "7",
+      "storage": "1",
+      "varName2": "member_tag",
+      "name": "Store Member Things"
+    },
+    {
+      "title": "",
+      "author": "Message Deleted",
+      "color": "#c887ff",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "${tempVars(\"member_avatar\")}",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Message sent by:",
+      "message": "${tempVars(\"member_ob\")} ${tempVars(\"member_tag\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Message:",
+      "message": "${tempVars(\"message_text\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "ID: ${tempVars(\"member_id\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "6",
+      "varName2": "log_channel",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
