@@ -1,0 +1,141 @@
+{
+  "name": "Message_Edited",
+  "temp": "before_edit",
+  "event-type": "26",
+  "_id": "MigtI",
+  "actions": [
+    {
+      "comment": "BEFORE",
+      "color": "#00ff40",
+      "name": "Comment"
+    },
+    {
+      "message": "1",
+      "varName": "before_edit",
+      "info": "4",
+      "storage": "1",
+      "varName2": "message_channel",
+      "name": "Store Message Info"
+    },
+    {
+      "message": "1",
+      "varName": "before_edit",
+      "info": "3",
+      "storage": "1",
+      "varName2": "message_author",
+      "name": "Store Message Info"
+    },
+    {
+      "message": "1",
+      "varName": "before_edit",
+      "info": "2",
+      "storage": "1",
+      "varName2": "message_text",
+      "name": "Store Message Info"
+    },
+    {
+      "member": "2",
+      "varName": "message_author",
+      "info": "1",
+      "storage": "1",
+      "varName2": "member_id",
+      "name": "Store Member Info"
+    },
+    {
+      "comment": "AFTER",
+      "color": "#00ff00",
+      "name": "Comment"
+    },
+    {
+      "message": "1",
+      "varName": "after_edit",
+      "info": "3",
+      "storage": "1",
+      "varName2": "author",
+      "name": "Store Message Info"
+    },
+    {
+      "message": "1",
+      "varName": "after_edit",
+      "info": "2",
+      "storage": "1",
+      "varName2": "message_etext",
+      "name": "Store Message Info"
+    },
+    {
+      "member": "2",
+      "varName": "author",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "author",
+      "info": "7",
+      "storage": "1",
+      "varName2": "tag",
+      "name": "Store Member Things"
+    },
+    {
+      "comment": "Log Message",
+      "color": "#00ff00",
+      "name": "Comment"
+    },
+    {
+      "title": "Edited Message",
+      "author": "${tempvars(\"tag\")}",
+      "color": "#00eeff",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "${tempvars(\"avatar\")}",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Message has been edited by:",
+      "message": "${tempVars(\"message_author\")} in ${tempVars(\"message_channel\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Before:",
+      "message": "${tempVars(\"message_text\")} ",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "After:",
+      "message": "${tempVars(\"message_etext\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "ID: ${tempVars(\"member_id\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "6",
+      "varName2": "log_channel",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "temp2": "after_edit"
+}
