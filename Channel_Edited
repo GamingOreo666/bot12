@@ -1,0 +1,101 @@
+{
+  "name": "Channel_Edited",
+  "temp": "before_edit",
+  "event-type": "23",
+  "_id": "wMZgT",
+  "actions": [
+    {
+      "comment": "BEFORE EDIT",
+      "color": "#00ff00",
+      "name": "Comment"
+    },
+    {
+      "channel": "3",
+      "varName": "before_edit",
+      "info": "2",
+      "storage": "1",
+      "varName2": "channel_name",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "3",
+      "varName": "before_edit",
+      "info": "9",
+      "storage": "1",
+      "varName2": "channel_date",
+      "name": "Store Channel Info"
+    },
+    {
+      "comment": "AFTER EDIT",
+      "color": "#00ff00",
+      "name": "Comment"
+    },
+    {
+      "channel": "3",
+      "varName": "after_edit",
+      "info": "0",
+      "storage": "1",
+      "varName2": "channel_object",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "3",
+      "varName": "after_edit",
+      "info": "1",
+      "storage": "1",
+      "varName2": "channel_id",
+      "name": "Store Channel Info"
+    },
+    {
+      "comment": "MESSAGE",
+      "color": "#00ff00",
+      "name": "Comment"
+    },
+    {
+      "title": "",
+      "author": "Channel Edited",
+      "color": "#00eeff",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Before:",
+      "message": "**Channel Name:** ${tempVars(\"channel_name\")}\n**Creation Date:** ${tempVars(\"channel_date\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "After:",
+      "message": "**Channel Name:** ${tempVars(\"channel_object\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "ID: ${tempVars(\"channel_id\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "6",
+      "varName2": "log_channel",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "temp2": "after_edit"
+}
