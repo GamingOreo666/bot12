@@ -1,0 +1,77 @@
+{
+  "name": "Role_Created",
+  "temp": "role_created",
+  "event-type": "10",
+  "_id": "ffusZ",
+  "actions": [
+    {
+      "role": "3",
+      "varName": "role_created",
+      "info": "2",
+      "storage": "1",
+      "varName2": "role_name",
+      "name": "Store Role Info"
+    },
+    {
+      "role": "3",
+      "varName": "role_created",
+      "info": "3",
+      "storage": "1",
+      "varName2": "role_colour",
+      "name": "Store Role Info"
+    },
+    {
+      "role": "3",
+      "varName": "role_created",
+      "info": "1",
+      "storage": "1",
+      "varName2": "role_id",
+      "name": "Store Role Info"
+    },
+    {
+      "title": "",
+      "author": "Role Created",
+      "color": "#007eff",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Role Name:",
+      "message": "${tempVars(\"role_name\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Role Colour:",
+      "message": "${tempVars(\"role_colour\")}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "ID: ${tempVars(\"role_id\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "6",
+      "varName2": "log_channel",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
