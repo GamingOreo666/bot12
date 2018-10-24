@@ -1,0 +1,125 @@
+{
+  "name": "Role_Edited",
+  "temp": "before_edit",
+  "event-type": "25",
+  "_id": "drHZE",
+  "actions": [
+    {
+      "comment": "BEFORE EDIT",
+      "color": "#00ff00",
+      "name": "Comment"
+    },
+    {
+      "role": "3",
+      "varName": "before_edit",
+      "info": "2",
+      "storage": "1",
+      "varName2": "role_name",
+      "name": "Store Role Info"
+    },
+    {
+      "role": "3",
+      "varName": "before_edit",
+      "info": "3",
+      "storage": "1",
+      "varName2": "role_colour",
+      "name": "Store Role Info"
+    },
+    {
+      "comment": "AFTER EDIT",
+      "color": "#00ff00",
+      "name": "Comment"
+    },
+    {
+      "role": "3",
+      "varName": "after_edit",
+      "info": "2",
+      "storage": "1",
+      "varName2": "role_aname",
+      "name": "Store Role Info"
+    },
+    {
+      "role": "3",
+      "varName": "after_edit",
+      "info": "3",
+      "storage": "1",
+      "varName2": "role_acolour",
+      "name": "Store Role Info"
+    },
+    {
+      "role": "3",
+      "varName": "after_edit",
+      "info": "6",
+      "storage": "1",
+      "varName2": "role_mention",
+      "name": "Store Role Info"
+    },
+    {
+      "role": "3",
+      "varName": "after_edit",
+      "info": "7",
+      "storage": "1",
+      "varName2": "role_sep",
+      "name": "Store Role Info"
+    },
+    {
+      "role": "3",
+      "varName": "after_edit",
+      "info": "1",
+      "storage": "1",
+      "varName2": "role_id",
+      "name": "Store Role Info"
+    },
+    {
+      "comment": "MESSAGE",
+      "color": "#00ff00",
+      "name": "Comment"
+    },
+    {
+      "title": "",
+      "author": "Role Edited",
+      "color": "#00eeff",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Before:",
+      "message": "**Role Name:** ${tempVars(\"role_name\")}\n**Role Colour:** ${tempVars(\"role_colour\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "After:",
+      "message": "**Role Name:** ${tempVars(\"role_aname\")}\n**Role Colour:** ${tempVars(\"role_acolour\")}\n**Is Role Mentionable:** ${tempVars(\"role_mention\")}\n**Is Role Seperate From Others:** ${tempVars(\"role_sep\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "ID: ${tempVars(\"role_id\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "6",
+      "varName2": "log_channel",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "temp2": "after_edit"
+}
