@@ -1,0 +1,61 @@
+{
+  "name": "Channel_Created",
+  "temp": "channel",
+  "event-type": "8",
+  "_id": "vBygS",
+  "actions": [
+    {
+      "channel": "3",
+      "varName": "channel",
+      "info": "1",
+      "storage": "1",
+      "varName2": "channel_id",
+      "name": "Store Channel Info"
+    },
+    {
+      "channel": "3",
+      "varName": "channel",
+      "info": "0",
+      "storage": "1",
+      "varName2": "channel_name",
+      "name": "Store Channel Info"
+    },
+    {
+      "title": "",
+      "author": "Channel Created",
+      "color": "#007eff",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Channel Name:",
+      "message": "${tempVars(\"channel_name\")}\n",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "ID: ${tempVars(\"channel_id\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "6",
+      "varName2": "log_channel",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
