@@ -1,0 +1,61 @@
+{
+  "name": "Role_Deleted",
+  "temp": "role",
+  "event-type": "11",
+  "_id": "ihdvg",
+  "actions": [
+    {
+      "role": "3",
+      "varName": "role",
+      "info": "2",
+      "storage": "1",
+      "varName2": "role_name",
+      "name": "Store Role Info"
+    },
+    {
+      "role": "3",
+      "varName": "role",
+      "info": "1",
+      "storage": "1",
+      "varName2": "role_id",
+      "name": "Store Role Info"
+    },
+    {
+      "title": "",
+      "author": "Role Deleted",
+      "color": "#c887ff",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Role Name:",
+      "message": "${tempVars(\"role_name\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "ID: ${tempVars(\"role_id\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "6",
+      "varName2": "log_channel",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
