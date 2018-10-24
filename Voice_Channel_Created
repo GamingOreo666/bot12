@@ -1,0 +1,61 @@
+{
+  "name": "Voice_Channel_Created",
+  "temp": "voice_channel",
+  "event-type": "14",
+  "_id": "RPgJn",
+  "actions": [
+    {
+      "channel": "3",
+      "varName": "voice_channel",
+      "info": "2",
+      "storage": "1",
+      "varName2": "channel_name",
+      "name": "Store Voice Channel Info"
+    },
+    {
+      "channel": "3",
+      "varName": "voice_channel",
+      "info": "1",
+      "storage": "1",
+      "varName2": "channel_id",
+      "name": "Store Voice Channel Info"
+    },
+    {
+      "title": "",
+      "author": "Voice Channel Created",
+      "color": "#007eff",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Voice Channel Name:",
+      "message": "${tempVars(\"channel_name\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "ID: ${tempVars(\"channel_id\")}",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "6",
+      "varName2": "log_channel",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
