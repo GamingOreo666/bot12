@@ -1,0 +1,20 @@
+{
+  "name": "setlogs",
+  "permissions": "ADMINISTRATOR",
+  "restriction": "1",
+  "_id": "TyEAe",
+  "actions": [
+    {
+      "info": "4",
+      "infoIndex": "1",
+      "storage": "2",
+      "varName": "log_channel",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "2",
+      "varName": "log_channel",
+      "name": "Save Variable"
+    }
+  ]
+}
